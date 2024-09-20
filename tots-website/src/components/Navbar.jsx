@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="bg-black bg-opacity-80 p-4 fixed top-0 left-0 right-0 h-[69px]">
-      <div className="container mx-auto flex justify-center items-center h-full">
-        <ul className="flex space-x-8">
-          <li><a href="/" className="text-white hover:text-gray-300">Home</a></li>
-          <li><a href="/about" className="text-white hover:text-gray-300">About</a></li>
-          <li><a href="/contact" className="text-white hover:text-gray-300">Contact</a></li>
-        </ul>
-      </div>
+    <nav className="bg-[#221932] p-4 border-b border-[#775E88] border-opacity-20">
+      <ul className="flex justify-center space-x-6">
+        <li><Link to="/" className="text-[#988289] hover:text-[#775E88] transition duration-300">Home</Link></li>
+        <li><Link to="/about" className="text-[#988289] hover:text-[#775E88] transition duration-300">About Me</Link></li>
+        <li><Link to="/work" className="text-[#988289] hover:text-[#775E88] transition duration-300">My Work</Link></li>
+        <li><Link to="/blog" className="text-[#988289] hover:text-[#775E88] transition duration-300">My Blog</Link></li>
+        <li><Link to="/courses" className="text-[#988289] hover:text-[#775E88] transition duration-300">My Courses</Link></li>
+        <li><Link to="/press" className="text-[#988289] hover:text-[#775E88] transition duration-300">Press Kit</Link></li>
+      </ul>
     </nav>
   );
 };
