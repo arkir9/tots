@@ -9,8 +9,7 @@ const Navbar = () => {
         <li><Link to="/about" className="text-[#988289] hover:text-[#775E88] transition duration-300">About Me</Link></li>
         <li><Link to="/work" className="text-[#988289] hover:text-[#775E88] transition duration-300">My Work</Link></li>
         <li><Link to="/blog" className="text-[#988289] hover:text-[#775E88] transition duration-300">My Blog</Link></li>
-        <li><Link to="/courses" className="text-[#988289] hover:text-[#775E88] transition duration-300">My Courses</Link></li>
-        <li><Link to="/press" className="text-[#988289] hover:text-[#775E88] transition duration-300">Press Kit</Link></li>
+       
       </ul>
     </nav>
   );

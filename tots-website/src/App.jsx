@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import Content from './components/Content';
 import Footer from './components/Footer';
 import MyWork from './components/MyWork';
+import Blog from './components/Blog';
+import About from './components/AboutMe';
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
               </>
             } />
             <Route path="/work" element={<MyWork />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/about" element={<About />} />
             {/* Add other routes as needed */}
           </Routes>
         </main>
